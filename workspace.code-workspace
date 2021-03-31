@@ -1,0 +1,12 @@
+{
+	"folders": [
+    {
+      "path": "../revision"
+    }
+  ],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "git-lesson-motomi",
+    "editor.detectIndentation": false,
+    "editor.tabSize": 2
+	}
+}
