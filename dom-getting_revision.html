@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+<body>
+  <h1>DOCUMENT OBJECT MODEL LESSON</h1>
+  <p id='para-1'>First let us learn getting element</p>
+  <p>Then we will learn creating elements</p>
+  <p>Then after we will learn setting attributes</p>
+  <p>Then after we will learn setting attributes</p>
+  <p>Then after we will learn setting attributes</p>
+  <script>
+    // selecting one items getElementById ('id')
+    //To select multiple items getElementsByTagName ('TagName')
+    //getElementsByClassName ('className')
+
+console.log (document.querySelector('p'))
+console.log (document.querySelector('#para-1'))
+console.log (document.querySelectorAll('p'))
+
+    const paragraphs = document.getElementsByTagName('p')
+    for (let i = 0; i < paragraphs.length; i++) {
+    if (i % 2 == 0) paragraphs[i].style.color = 'green'
+    else paragraphs[i].style.color = 'red'}
+  </script>
+</body>
+</html>

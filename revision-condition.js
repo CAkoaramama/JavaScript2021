@@ -1,5 +1,5 @@
-//  conditions =. decision making
-// some condition => time
+// //  conditions =. decision making
+// // some condition => time
 
 // let a = 5
 // let time = 17
@@ -56,7 +56,7 @@
 // console.log (getWeatherCondition ('SnoWy'))
 // console.log (getWeatherCondition ('wIndy'))
 
-// switch
+// // switch
 
 // function weatherCondition () {
 // let weather = prompt ('Enter weather:'). toLowerCase()
@@ -80,21 +80,21 @@
 // }
 // console.log (weatherCondition())
 
-// ternary = > x, Y, z
+// // ternary = > x, Y, z
 
 // let name ='Emi'
 // let value = name.length > 5 ? 'Long name' : 'Short name'
 // console.log (value)
 
-// Loops
-/*
-for (initialization, condition, increment/decrement) {
+// // Loops
+// /*
+// for (initialization, condition, increment/decrement) {
 
-}*/
-// ======= 0 to 100 ======
-for (let i = 50; i <= 55; i = i + 2) {
-  console.log (i)
-}
+// }*/
+// // ======= 0 to 100 ======
+// for (let i = 50; i <= 55; i = i + 2) {
+//   console.log (i)
+// }
 
 // function generateEvenNums (n) {
 //   const evens = []
@@ -112,24 +112,35 @@ for (let i = 5; i > 0; i--) {
   console.log (i)
 }
 //  ====== revers ======= [2,5,6,7,0] => [0,7,6,5,2]
-function reverseArray (arr) {
-  let newArray = []
-  for (let i = arr.length; i >= 0; i--) {
-    newArray.push(arr[i])
-  }
-  return newArray
-}
-console.log (reverseArray([2,5,6,7,0]))
+// function reverseArray (arr) {
+//   let newArray = []
+//   for (let i = arr.length; i >= 0; i--) {
+//     newArray.push(arr[i])
+//   }
+//   return newArray
+// }
+// console.log (reverseArray([2,5,6,7,0]))
 
 // function pringFullName (firstName, LastName) {
 //   return firstName + '' + LastName}
+
+// function printFullName (firstName, lastName) {
+//   let fullName = firstName + ' ' + lastName
+//   return fullName
+// }
+// console.log (printFullName ('Motomi', 'Yamagata'))
+
+// const printFullName = (firstName, lastName) => {
+  
+//   return `My name is ${firstName + '' + lastName}`}
+// console.log (printFullName ('Motomi, Yamagata'))
 
 // function expression
 // const pringFullName = function (firstName, LastName) {
 //     return firstName + '' + LastName}
 //   console.log (pringFullName ('Motomi', 'Yamagata'))
 
-// allow function
+// // allow function
 
 // const pringFullName = (firstName, LastName) => firstName + '' + LastName
 //   console.log (pringFullName ('Motomi', 'Yamagata'))
@@ -140,12 +151,24 @@ console.log (reverseArray([2,5,6,7,0]))
 // }
 // console.log (calculateWeight (75.45, 9.81))
 
-const calculateWeight = (mass, gravity = 9.81) => {
-  let weight = mass * gravity
-  return `${weight.toFixed(2)}`
-}
-console.log (calculateWeight (20,)) //earth graivity, written as defalt
-console.log (calculateWeight(75.45, 1.62)) //Moon gravity
+// const calculateWeight = (mass, gravity = 9.81) => {
+//   let weight = mass * gravity
+//   return `${weight.toFixed(2)}`
+// }
+// console.log (calculateWeight (20,)) //earth graivity, written as defalt
+// console.log (calculateWeight(75.45, 1.62)) //Moon gravity
+// function CalculateWeight (mass, gravity) {
+//   let weight = mass * gravity
+//   return weight
+// }
+// console.log (CalculateWeight (200, 9.81))
+
+// const calculateWeight = (mass,gravity = 9.81) => {
+//   let weight = mass * gravity
+//   return weight
+// }
+// console.log (calculateWeight (200))
+// console.log (calculateWeight (200, 1.61))
 
 
 // function calculateAreaOfCircle (r){
@@ -154,28 +177,50 @@ console.log (calculateWeight(75.45, 1.62)) //Moon gravity
 // }
 // console.log (calculateAreaOfCircle (100))
 
-const calculateAreaOfCircle = (r) => {
-  let area = Math.PI * r**2
-  return `The area of the circlewith ${r}m radius is ${area.toFixed(2)}m2`
-}
-console.log (calculateAreaOfCircle (100))
+// const calculateAreaOfCircle = (r) => {
+//   let area = Math.PI * r **2
+//   return area
+// }
+// console.log (calculateAreaOfCircle (10))
 
-// // Global Objects
+// const calculateAreaOfCircle = (r) => {
+//   let area = Math.PI * r**2
+//   return `The area of the circle is ${area.toFixed (2)} m2`
+// }
+// console.log (calculateAreaOfCircle (4.2))
+
+// function calculateAreaOfCircle (r) {
+//   let area = Math.PI * r**2
+//   return `Second area of the circla is ${area.toFixed(1)}m2`
+// }
+// console.log (calculateAreaOfCircle (2.4))
+
+// const calculateAreaOfCircle = (r) => {
+//   let area = Math.PI * r**2
+//   return `The area of the circlewith ${r}m radius is ${area.toFixed(2)}m2`
+// }
+// console.log (calculateAreaOfCircle (100))
+
+// // // Global Objects
 
 
-console.log (Math.sqrt(4))
-console.log (Math.random()) // 0 to 0.99999999
-console.log (Math.round (9.81)) //10
-console.log (Math.floor(9.81)) //9
-console.log (Math.ceil(3.14)) //4
+// console.log (Math.sqrt(4))
+// console.log (Math.random()) // 0 to 0.99999999
+// console.log (Math.round (9.81)) //10
+// console.log (Math.floor(9.81)) //9
+// console.log (Math.ceil(3.14)) //4
 
-// generate array of 7 random numbers ?
-const generateSevenNums = (n = 100) => {
-  const nums = []
-  for (let i = 0; i < n; i++) 
-    nums.push(Math.floor(Math.random() * 101))
+// // generate array of 7 random numbers ?
+// const generateSevenNums = (n = 100) => {
+//   const nums = []
+//   for (let i = 0; i < n; i++) 
+//     nums.push(Math.floor(Math.random() * 101))
   
-  return nums
-}
-console.log (generateSevenNums (15))
+//   return nums
+// }
+// console.log (generateSevenNums (15))
 
+// object Methods
+// hasOwnProperty, Object.values, Object.assign, Object.keys, Object.entries
+const keys = Object.keys (person)
+const values = Object.values (person)
